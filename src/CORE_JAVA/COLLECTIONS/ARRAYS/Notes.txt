@@ -1,0 +1,14 @@
+Array list methods:
+
+.add(value) = will add an element in arraylist sequentially
+
+.set(index,value) = will set the value at given index
+
+.addAll(list) = will add all the elements of provided list to needed list
+
+.indexOf(value)  = will give the index of first occurrence of value
+
+.lastIndexOf(value) = will give the index of last occurrence of value
+
+.subList(from,to) = will create a sub list from a list of size from index to to index, but excluding to index
+

@@ -10,6 +10,16 @@ public class Main {
         alist.add(100);
         alist.add(1000);
 
+        System.out.println("Element that got replaced = " + alist.set(1,200));
+
+        //List<Integer> alist2 = new ArrayList<>(alist);
+        List<Integer> alist2 = new ArrayList<>();
+        alist2.add(101);
+        alist2.add(444);
+
+        alist2.addAll(alist);
+
         System.out.println(alist);
+        System.out.println(alist2);
     }
 }
