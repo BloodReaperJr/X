@@ -1,4 +1,4 @@
-package CORE_JAVA.COLLECTIONS.ARRAYS;
+package CORE_JAVA.COLLECTIONS.ARRAYLIST;
 
 public class Main {
     public static void main(String[] args) {
