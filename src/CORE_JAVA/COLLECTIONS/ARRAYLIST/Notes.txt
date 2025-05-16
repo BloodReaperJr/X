@@ -1,4 +1,4 @@
-Array list methods:
+Arraylist/ Linkedlist methods:
 
 .add(value) = will add an element in arraylist sequentially
 
@@ -11,4 +11,6 @@ Array list methods:
 .lastIndexOf(value) = will give the index of last occurrence of value
 
 .subList(from,to) = will create a sub list from a list of size from index to to index, but excluding to index
+
+Note: The changes made to sublist such as .set() will also be reflected in main list
 
