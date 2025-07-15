@@ -14,3 +14,23 @@ Arraylist/ Linkedlist methods:
 
 Note: The changes made to sublist such as .set() will also be reflected in main list
 
+.toArray() is used to convert an Arraylist to Array
+
+Integer [] arr = alist.toArray(new Integer[0]);
+
+.clear() = will clear the list
+
+.isEmpty() = will return true if the list is empty
+
+.size() = will return the size of the list
+
+.remove(index) = will remove the element at given index
+
+.remove(value) = will remove the first occurrence of value
+
+.removeAll(list) = will remove all the elements of provided list from needed list
+
+
+
+
+

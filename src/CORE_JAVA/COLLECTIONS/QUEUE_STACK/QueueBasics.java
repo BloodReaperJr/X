@@ -1,10 +1,8 @@
-package CORE_JAVA.COLLECTIONS.QUEUE;
+package CORE_JAVA.COLLECTIONS.QUEUE_STACK;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
-public class Main {
+public class QueueBasics {
     public static void main(String[] args) {
 //        Queue<Integer> q = new LinkedList<>();
 //        q.offer(1);
@@ -27,6 +25,5 @@ public class Main {
         }
 
     }
-
 
 }
