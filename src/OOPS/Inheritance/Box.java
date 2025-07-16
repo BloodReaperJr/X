@@ -34,6 +34,7 @@ public class Box {
         this.w = box.w;
     }
 
+
     // Method to print a simple message
     public void information() {
         System.out.println("Running the box");

@@ -1,0 +1,109 @@
+**Abstraction and Encapsulation in Object-Oriented Programming (OOP)**
+
+---
+
+### **1. What is Abstraction?**
+
+**Definition:**
+Abstraction is the process of hiding the internal implementation details and showing only the essential features of an object. It focuses on **what** an object does rather than **how** it does it.
+
+**How it's implemented:**
+
+* Using `abstract` classes
+* Using `interfaces`
+
+**Example:**
+
+```java
+abstract class Vehicle {
+    abstract void start(); // No implementation here
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car starts with key ignition.");
+    }
+}
+```
+
+In the above example, `Vehicle` defines the abstraction (start method), and `Car` provides the implementation.
+
+**Key Points:**
+
+* Achieved using abstract classes or interfaces
+* Focuses on hiding implementation complexity
+* Promotes modularity and code readability
+* Encourages separation of concerns
+
+---
+
+### **2. What is Encapsulation?**
+
+**Definition:**
+Encapsulation is the mechanism of wrapping data (variables) and methods (functions) that operate on the data into a single unit (class) and **restricting direct access** to some of the object's components.
+
+**How it's implemented:**
+
+* Declare variables as `private`
+* Provide public `getter` and `setter` methods to access or update them
+
+**Example:**
+
+```java
+class Student {
+    private String name;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        if (name != null && !name.isEmpty()) {
+            this.name = name;
+        }
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        }
+    }
+}
+```
+
+**Key Points:**
+
+* Protects data from unauthorized access
+* Maintains data integrity
+* Enhances control over data
+* Easier to debug and maintain
+
+---
+
+### **3. Difference Between Abstraction and Encapsulation**
+
+| Feature               | Abstraction                      | Encapsulation                            |
+| --------------------- | -------------------------------- | ---------------------------------------- |
+| Purpose               | Hide implementation complexity   | Hide internal data                       |
+| Focus On              | What an object does              | How data is protected                    |
+| Achieved Using        | Abstract classes, Interfaces     | Access modifiers (private, public, etc.) |
+| Method Implementation | Not provided in abstract methods | Provided with control in getters/setters |
+| Example               | `abstract void start();`         | `private int age; public void setAge()`  |
+| Level of Hiding       | Hides design/logic               | Hides data                               |
+| Related To            | Design level                     | Implementation level                     |
+
+---
+
+### **Conclusion:**
+
+Abstraction and Encapsulation are two core principles of object-oriented programming that often work together:
+
+* **Encapsulation** protects the internal state and enforces rules.
+* **Abstraction** exposes only what’s necessary to the outside world.
+
+Using both leads to secure, clean, and maintainable code.

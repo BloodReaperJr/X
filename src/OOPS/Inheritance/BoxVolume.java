@@ -26,6 +26,7 @@ public class BoxVolume extends Box {
         this.volume = volume;
     }
 
+
     // Constructor with all dimensions: uses super(l, h, w) to initialize the inherited fields
     BoxVolume(double l, double h, double w, double volume) {
         super(l, h, w); // Calls Box(double l, double h, double w)

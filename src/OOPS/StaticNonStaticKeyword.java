@@ -1,6 +1,8 @@
 package OOPS;
 
 public class StaticNonStaticKeyword {
+    // overriding depends on dynamic dispatch (runtime polymorphism) —
+    // and static methods are resolved at compile time, based on the reference type, not the object.
     public static void main(String[] args) {
         // Creating two Human objects
         Human human1 = new Human(24, "Shubham", 30000, false);
