@@ -1,0 +1,59 @@
+
+Access Modifiers in Java
+=========================
+
+Java provides four types of access control modifiers to set the accessibility (visibility) of classes, constructors, methods, and other members. These are:
+
+1. public
+2. protected
+3. default (no modifier)
+4. private
+
+Here is a table summarizing the access control provided by each modifier:
+
++-------------+----------+---------+-------------------------+----------------------+------------------------------+
+| Modifier    | Class    | Package | Subclass (same package) | Subclass (diff pkg)  | World (other pkg, no subclass) |
++-------------+----------+---------+-------------------------+----------------------+------------------------------+
+| public      |    +     |    +    |            +            |           +          |              +               |
+| protected   |    +     |    +    |            +            |           +          |                              |
+| no modifier |    +     |    +    |            +            |                      |                              |
+| private     |    +     |         |                         |                      |                              |
++-------------+----------+---------+-------------------------+----------------------+------------------------------+
+
+Legend:
+- '+' indicates access is allowed.
+- Empty cells mean access is not allowed.
+
+Explanation of Access Modifiers
+-------------------------------
+
+1. **public**:
+   - Accessible from any other class in the same or different package.
+   - Used for APIs and components meant for use outside the package.
+
+2. **protected**:
+   - Accessible within the same package and by subclasses (even if they are in different packages).
+   - Common in inheritance scenarios.
+
+3. **default (no modifier)**:
+   - Accessible only within the same package.
+   - Also known as package-private access.
+
+4. **private**:
+   - Accessible only within the same class.
+   - Used for encapsulation to hide internal data.
+
+Use Cases
+----------
+
+- Use **private** to hide internal details of classes (Encapsulation).
+- Use **protected** when extending functionality via inheritance.
+- Use **public** to expose essential APIs and library methods.
+- Use **default** when you want package-level access without exposing it publicly.
+
+Best Practices
+---------------
+
+- Favor **private** fields with **public** or **protected** getter/setter methods.
+- Don’t expose more than necessary – use the least permissive access level you can.
+

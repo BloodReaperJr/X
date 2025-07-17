@@ -1,0 +1,55 @@
+**Java Packages: Overview**
+
+A **package** in Java is a namespace that organizes a set of related classes and interfaces. Conceptually, it’s similar to folders on your computer. Java packages help avoid name conflicts and can control access with protected and default access levels. They also make it easier to locate and use classes, interfaces, enums, and annotations.
+
+---
+
+### **Types of Packages in Java**
+
+Java has two main types of packages:
+
+1. **Built-in Packages**
+2. **User-defined Packages**
+
+---
+
+### **1. Built-in Packages**
+
+These are the packages that are part of the Java Development Kit (JDK). They provide ready-to-use classes and interfaces for commonly used functionality like input/output, networking, data structures, graphical user interface (GUI), and more.
+
+#### **java.lang**
+
+This is the most fundamental package in Java and is automatically imported in every Java program. It contains essential classes such as `String`, `Math`, `Integer`, `System`, `Thread`, and `Object`. You don’t need to explicitly import this package because it provides core functionality such as type wrappers, exception handling, multithreading, and object manipulation.
+
+#### **java.util**
+
+The `java.util` package includes utility classes that are commonly used for data manipulation and collection handling. It contains data structures like `ArrayList`, `HashMap`, `HashSet`, `LinkedList`, and utility classes like `Collections`, `Calendar`, `Date`, and `Random`. It plays a crucial role in simplifying data storage, manipulation, and retrieval.
+
+#### **java.io**
+
+This package provides classes and interfaces for system input and output through data streams, serialization, and file system operations. It includes classes like `File`, `InputStream`, `OutputStream`, `BufferedReader`, `FileReader`, and `PrintWriter`. It supports both byte-oriented and character-oriented I/O operations.
+
+#### **java.applet**
+
+The `java.applet` package is used for creating small Java programs that can be embedded into web pages. These programs are called applets. Although considered outdated now, applets were widely used for delivering interactive features in early web applications. It includes the `Applet` class and methods for controlling applet behavior such as initialization, execution, and destruction.
+
+#### **java.awt**
+
+The `java.awt` (Abstract Window Toolkit) package provides classes for building graphical user interface (GUI) applications. It includes components like buttons, text fields, and event listeners. This package enables GUI creation and includes layout managers and graphics support. AWT is the foundation for Java’s GUI system, although it's often replaced by Swing and JavaFX in modern applications.
+
+#### **java.net**
+
+The `java.net` package deals with networking capabilities. It provides classes and interfaces for implementing networking applications like client-server communication. Classes like `Socket`, `ServerSocket`, `URL`, and `URLConnection` help developers build applications that can send and receive data over networks using TCP/IP protocols.
+
+---
+
+### **2. User-defined Packages**
+
+User-defined packages are created by programmers to group their own classes and interfaces. This promotes code reusability and modularity. You create a package using the `package` keyword at the top of a Java file and then compile the classes into that package's folder structure.
+
+
+User-defined packages are essential in large-scale projects to maintain organization and manage access controls.
+
+---
+
+By using both built-in and user-defined packages effectively, Java developers can write clean, maintainable, and reusable code across a wide range of applications.
