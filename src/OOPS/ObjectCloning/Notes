@@ -1,0 +1,60 @@
+**Deep Copy vs Shallow Copy in Java**
+
+---
+
+### 🔁 Overview
+
+Object copying is a common task in Java, and it can be done in two ways: **Shallow Copy** and **Deep Copy**. These terms refer to how an object and its fields (especially non-primitives) are duplicated.
+
+---
+
+### 🧪 Shallow Copy
+
+* **Definition**: A shallow copy of an object copies all fields, but it doesn't create copies of objects that the fields reference. Instead, it copies the references themselves.
+* **Behavior**:
+
+  * **Primitives**: Copied by value.
+  * **Non-Primitives** (like arrays, objects): Only the references are copied, not the actual objects.
+* **Implication**: Changes made to referenced objects in one copy reflect in the other.
+* **Use Case**: Suitable when you want shared references or want to avoid heavy memory usage.
+
+---
+
+### 🧬 Deep Copy
+
+* **Definition**: A deep copy copies all fields and creates entirely new instances for all referenced objects as well.
+* **Behavior**:
+
+  * **Primitives**: Copied by value.
+  * **Non-Primitives**: Entire objects are recursively copied, so the new copy is completely independent.
+* **Implication**: Changes to one object do not affect the other.
+* **Use Case**: Used when data integrity and object independence are crucial.
+
+---
+
+### 🧠 Key Differences
+
+| Feature           | Shallow Copy               | Deep Copy                        |
+| ----------------- | -------------------------- | -------------------------------- |
+| Object References | Shared between copies      | Duplicated (new memory for each) |
+| Memory Usage      | Less (reuses memory)       | More (creates separate objects)  |
+| Performance       | Faster to create           | Slower due to deep traversal     |
+| Risk              | Unintentional side-effects | Safer due to object isolation    |
+
+---
+
+### 💡 Behavior with Primitives vs Non-Primitives
+
+| Type               | Shallow Copy           | Deep Copy               |
+| ------------------ | ---------------------- | ----------------------- |
+| **Primitives**     | Always copied by value | Always copied by value  |
+| **Non-Primitives** | Reference is copied    | Object is deeply cloned |
+
+---
+
+### 📌 Summary
+
+* Use **shallow copy** when you want quick duplication and can tolerate shared references.
+* Use **deep copy** when you need completely independent objects with no shared internal references.
+
+Let me know if you want this explained with diagrams or real-life examples!
